@@ -15,6 +15,7 @@ import { PostsController } from './posts.controller';
           transport: Transport.TCP,
           options: {
             host: configService.get('POST_SERVICE_HOST'),
+            port: configService.get('POST_SERVICE_PORT'),
           },
         }),
     },
